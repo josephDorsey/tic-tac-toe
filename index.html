@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <h1 class="game-title">Tic-Tac-Toe</h1>
+    <div class="game-user-box">
+      <div class="game-user-name-container">
+        <label class="game-user-name-title">Player</label>
+        <input
+          class="game-user-name"
+          type="text"
+          placeholder="enter nickname..."
+        />
+        <p class="game-user-name-result">Joe</p>
+        <button class="game-board-button">Save</button>
+      </div>
+      <div class="game-board-message-container">
+        <p class="game-board-select-marker-title">Choose a marker</p>
+      </div>
+      <div class="game-board-buttons game-board-marker-container">
+        <button class="game-board-marker marker-x">X</button>
+        <button class="game-board-marker marker-o">O</button>
+      </div>
+    </div>
+    <div class="game-board">
+      <h2 class="game-board-title move-count-title">Move: 1</h2>
+      <h3 class="game-board-title game-board-player-title">Player's turn</h3>
+      <div class="game-board-sections">
+        <div class="game-board-section">
+          <div class="game-board-box" name="box-1"></div>
+          <div class="game-board-box" name="box-2"></div>
+          <div class="game-board-box" name="box-3"></div>
+        </div>
+        <div class="game-board-section">
+          <div class="game-board-box" name="box-4"></div>
+          <div class="game-board-box" name="box-5"></div>
+          <div class="game-board-box" name="box-6"></div>
+        </div>
+        <div class="game-board-section">
+          <div class="game-board-box" name="box-7"></div>
+          <div class="game-board-box" name="box-8"></div>
+          <div class="game-board-box" name="box-9"></div>
+        </div>
+      </div>
+      <div class="game-board-buttons game-board-actions">
+        <button class="game-board-button game-start">Start</button>
+        <button class="game-board-button game-reset">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>

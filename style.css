@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #e6e6eb; */
+  background-color: #3083dc;
+}
+.game-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  color: #f5f5fa;
+}
+.game-user-box {
+  /* border: 1px solid black; */
+  width: 400px;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 12px;
+  /* background-color: #8e7dbe; */
+  background-color: #2ebfa5;
+  box-shadow: 6px 6px 24px 0px rgba(0, 0, 0, 0.1);
+}
+.game-user-name-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.game-user-name-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f5f5fa;
+  color: #000;
+}
+.game-user-name {
+  border: 0;
+  padding: 4px 8px;
+  text-indent: 4px;
+  border-radius: 6px;
+}
+.game-board-select-marker-title {
+  font-weight: 500;
+  /* color: #f5f5fa; */
+  color: #000;
+}
+/* game board */
+
+.game-board {
+  display: flex;
+  /* border: 1px solid black; */
+  width: 300px;
+  padding: 24px;
+  border-radius: 8px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f5f5fa;
+  margin: 0 auto;
+  box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+.game-board-box {
+  display: flex;
+  border: 1px solid black;
+  padding: 32px;
+}
+
+.game-board-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.game-board-sections {
+  display: flex;
+  justify-content: center;
+}
+.game-board-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-board-buttons {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  margin-top: 12px;
+}
+.game-board-actions {
+  gap: 12px;
+}
+.game-board-button {
+  border: 0;
+  background-color: #3b5bdb;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.game-board-message-container {
+  text-align: center;
+  margin: 8px 0px;
+}
+.game-board-marker-container {
+  gap: 8px;
+}
+
+.game-board-marker {
+  border: 0;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  padding: 4px 16px;
+}
+
+/* button states */
+
+.game-board-button:hover {
+  background-color: #233783;
+}
+
+.game-board-marker:hover {
+  outline: 1px solid #3b5bdb;
+  background-color: #3b5bdb;
+  color: #f5f5fa;
+}
+
+/* active marker  */
+
+.selected-marker {
+  outline: 1px solid #3b5bdb;
+  background-color: #3b5bdb;
+  color: #f5f5fa;
+}
