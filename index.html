@@ -16,20 +16,22 @@
           type="text"
           placeholder="enter nickname..."
         />
-        <p class="game-user-name-result">Joe</p>
+        <p class="game-user-name-text">Joe</p>
         <button class="game-board-button">Save</button>
       </div>
       <div class="game-board-message-container">
         <p class="game-board-select-marker-title">Choose a marker</p>
       </div>
       <div class="game-board-buttons game-board-marker-container">
-        <button class="game-board-marker marker-x">X</button>
-        <button class="game-board-marker marker-o">O</button>
+        <button class="game-board-marker marker-x" name="x">X</button>
+        <button class="game-board-marker marker-o" name="o">O</button>
       </div>
     </div>
     <div class="game-board">
-      <h2 class="game-board-title move-count-title">Move: 1</h2>
-      <h3 class="game-board-title game-board-player-title">Player's turn</h3>
+      <h2 class="game-board-title move-count-title hidden">Move: 1</h2>
+      <h3 class="game-board-title game-board-player-title hidden">
+        Player's turn
+      </h3>
       <div class="game-board-sections">
         <div class="game-board-section">
           <div class="game-board-box" name="box-1"></div>
@@ -52,5 +54,6 @@
         <button class="game-board-button game-reset">Reset</button>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
