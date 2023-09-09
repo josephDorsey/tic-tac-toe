@@ -8,6 +8,9 @@ body {
   /* background-color: #e6e6eb; */
   background-color: #3083dc;
 }
+.hidden {
+  display: none;
+}
 .game-title {
   display: flex;
   justify-content: center;
