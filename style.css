@@ -7,6 +7,7 @@
 body {
   /* background-color: #e6e6eb; */
   background-color: #3083dc;
+  position: relative;
 }
 .hidden {
   display: none;
@@ -17,6 +18,12 @@ body {
   margin-top: 12px;
   margin-bottom: 24px;
   color: #f5f5fa;
+}
+.game-player-options {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 12px;
 }
 .game-user-box {
   /* border: 1px solid black; */
@@ -40,9 +47,36 @@ body {
 }
 .game-user-name-title {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   color: #f5f5fa;
   color: #000;
+}
+.game-user-name-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+.game-board-player-marker {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.game-over-screen {
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f5f5fa;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+  /* top: 0; */
+  /* left: 0;
+  right: 0; */
+  transform: translateX(-19%);
 }
 .game-user-name {
   border: 0;
@@ -73,8 +107,11 @@ body {
 
 .game-board-box {
   display: flex;
-  border: 1px solid black;
+  outline: 1px solid black;
   padding: 32px;
+  margin: 1.5px;
+  width: 77.5px;
+  height: 84px;
 }
 
 .game-board-title {
@@ -83,6 +120,13 @@ body {
   margin-bottom: 12px;
 }
 
+.game-board-player-title {
+  display: none;
+}
+
+.move-count-title {
+  display: none;
+}
 .game-board-sections {
   display: flex;
   justify-content: center;
@@ -137,6 +181,9 @@ body {
   color: #f5f5fa;
 }
 
+.game-board-box:hover {
+  border: 1px solid #3b5bdb;
+}
 /* active marker  */
 
 .selected-marker {
